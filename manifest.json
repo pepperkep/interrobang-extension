@@ -1,0 +1,12 @@
+{
+    "name": "Interrobang Replace",
+    "version": "1.0",
+    "description": "Replaces !? and ?! with ‽ in all webpages",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["replace.js"]
+        }
+    ],
+    "manifest_version": 2
+}
