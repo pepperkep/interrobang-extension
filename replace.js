@@ -5,7 +5,7 @@
 replaceInterro(document.body);
 
 function replaceInterro(node){
-    if(node.childNodes !== null){
+    if(node.childNodes !== null && node.nodeName !== 'script'){
         for(var i = 0; i < node.childNodes.length; i++){
             if(node.childNodes[i].nodeType == Node.TEXT_NODE){
                 var oldNode = node.childNodes[i];
